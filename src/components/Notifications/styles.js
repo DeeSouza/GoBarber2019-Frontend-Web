@@ -10,6 +10,11 @@ export const Badge = styled.div`
 	background: none;
 	border: 0;
 	position: relative;
+	cursor: pointer;
+
+	svg {
+		transition: fill 0.25s;
+	}
 
 	${props =>
 		props.hasUnread &&
@@ -25,6 +30,12 @@ export const Badge = styled.div`
 				border-radius: 50%;
 			}
 		`}
+
+	&:hover {
+		svg {
+			fill: #000;
+		}
+	}
 `;
 
 export const NotificationList = styled.div`

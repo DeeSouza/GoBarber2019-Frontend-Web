@@ -56,6 +56,10 @@ export const Profile = styled.div`
 			margin-top: 2px;
 			font-size: 12px;
 			color: #999;
+
+			&:hover {
+				color: #000;
+			}
 		}
 	}
 
