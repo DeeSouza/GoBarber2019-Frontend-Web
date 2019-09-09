@@ -60,7 +60,7 @@ export default function Notifications() {
 		}
 
 		loadNotifications();
-	});
+	}, []);
 
 	return (
 		<Container>
