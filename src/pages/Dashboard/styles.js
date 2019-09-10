@@ -16,6 +16,12 @@ export const Container = styled.div`
 			background: none;
 			width: 36px;
 			height: 35px;
+			transform: scale(1);
+			transition: all 300ms;
+
+			&:hover {
+				transform: scale(1.2);
+			}
 		}
 
 		strong {
@@ -33,12 +39,17 @@ export const Container = styled.div`
 	}
 `;
 
-export const Time = styled.div`
+export const Time = styled.li`
 	padding: 20px;
 	border-radius: 4px;
 	background: #fff;
-
 	opacity: ${props => (props.past ? 0.6 : 1)};
+	border-left: 0px solid #7159c1;
+	transition: all 0.25s;
+
+	&:hover {
+		border-left: 10px solid #7159c1;
+	}
 
 	strong {
 		display: block;
