@@ -1,7 +1,7 @@
 <h1 align="center">GOBARBER - FRONTEND WEB</h1>
 
 ![reactbadge](https://img.shields.io/badge/16.9.0-React-blue?style=flat-square&logo=react)
-![reactbadge](https://img.shields.io/badge/1.38.0-version-orange?style=flat-square&logo=visual-studio-code)
+![reactbadge](https://img.shields.io/badge/1.38.0-Visual%20Code-orange?style=flat-square&logo=visual-studio-code)
 ![reactbadge](https://img.shields.io/badge/1.17.3-version-red?style=flat-square&logo=yarn)
 
 > Aplicação para barbeiros gerenciarem seus agendamentos de corte de cabelo e barba.
