@@ -46,9 +46,12 @@ export default function Dashboard() {
 				return {
 					time: `${hour}:00`,
 					past: isBefore(compareDate, new Date()),
-					appointment: response.data.find(a =>
-						isEqual(parseISO(a.date), compareDate)
-					),
+					appointment: response.data.find(a => {
+						return isEqual(
+							utcToZonedTime(parseISO(a.date)),
+							compareDate
+						);
+					}),
 				};
 			});
 

@@ -48,7 +48,7 @@ export const Time = styled.li`
 	transition: all 0.25s;
 
 	&:hover {
-		border-left: 10px solid #7159c1;
+		border-left: 10px solid #ff892e;
 	}
 
 	strong {
@@ -62,5 +62,6 @@ export const Time = styled.li`
 		display: block;
 		margin-top: 3px;
 		color: ${props => (props.available ? '#999' : '#666')};
+		font-weight: ${props => (props.available ? 'normal' : '700')};
 	}
 `;
